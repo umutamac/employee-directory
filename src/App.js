@@ -12,44 +12,33 @@ class App extends Component {
     employees
   };
 
-
-
-  sort = sortParameter => {
-    const employees = this.state.employees.sort( 
+  sortNum = sortParameter => {
+    const employees = this.state.employees.sort(
       (a, b) => {
-        console.log(a[sortParameter])
-        return a[sortParameter].localeCompare(b[sortParameter]);
+        return a[sortParameter] - b[sortParameter];
       }
-   );
-
+    );
     this.setState({ employees });
   };
 
-
-
-  // sortByID = id => {
-  //   const employees = this.state.employees.sort(function (x, y) { return (x["id"] - y["id"]) });
-  //   this.setState({ employees });
-  // };
-  // sortByName = name => {
-  //   // const employees = this.state.employees.filter(employees => employees.id !== id);
-  //   this.setState({ employees });
-  // };
-  // sortByAge = age => {
-  //   const employees = this.state.employees.sort(function (x,y) { return (x["age"] - y["age"]) });
-  //   this.setState({ employees });
-  // };
-  // sortBySalary = salary => {
-  //   const employees = this.state.employees.sort(function (x,y) {return (x["salary"] - y["salary"])});
-  //   this.setState({ employees });
-  // };
+  sortString = sortParameter => {
+    const employees = this.state.employees.sort(
+      (a, b) => {
+        return a[sortParameter].localeCompare(b[sortParameter]);
+      }
+    );
+    this.setState({ employees });
+  };
 
   // Map over this.state.employees and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
         <Title>Employee Table</Title>
-        <Button sort={this.sort}></Button>
+        <Button
+          sortNum={this.sortNum}
+          sortString={this.sortString}
+        />
         <TableBody>
           {this.state.employees.map(employees => (
             <TableContent

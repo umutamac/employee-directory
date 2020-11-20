@@ -1,17 +1,17 @@
 import React from "react";
-// import "./style.css";
+import "./style.css";
 
 function Button(props) {
     return (
         <div className="buttons">
-            <button onClick={() => props.sort("id")} id="id">
-                Sort by ID{props.children}</button>
-            <button onClick={() => props.sort("employee_name")} id="name">
-                Sort by Name{props.children}</button>
-            <button onClick={() => props.sort("employee_age")} id="age">
-                Sort by Age{props.children}</button>
-            <button onClick={() => props.sort("employee_salary")} id="salary">
-                Sort by Salary{props.children}</button>
+            <button onClick={() => props.sortNum("id")}>
+                Sort by ID</button>
+            <button onClick={() => props.sortString("employee_name")}>
+                Sort by Name</button>
+            <button onClick={() => props.sortNum("employee_age")}>
+                Sort by Age</button>
+            <button onClick={() => props.sortNum("employee_salary")}>
+                Sort by Salary</button>
         </div>
     );
 }

@@ -1,8 +1,13 @@
-button {
-  display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+.buttons {
+  margin-top: 12px;
+  margin-bottom: 12px;
   text-align: center;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #4c5eaf;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  flex: 0 0 200px;
+  justify-content: space-around;
 }

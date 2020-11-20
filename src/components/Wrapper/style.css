@@ -2,10 +2,16 @@
   padding-top: 50px;
   background: #ECEFF1;
   height: 100%;
+  padding: 10px 50px;
+
   display: flex;
-  flex-flow: row wrap;
-  padding: 20px;
-  justify-content: space-around;
-  align-content: flex-start;
+  flex-flow: column;
+  justify-content: space-between;
+  align-content: flex-start; 
+  align-items: stretch;
   overflow: auto;
 }
+
+/* .wrapper * {
+ max-width: 80%;
+} */

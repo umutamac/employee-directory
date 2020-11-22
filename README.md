@@ -5,7 +5,7 @@ This app lets users sort the table data in ascending order by ID number, name, a
 This app uses React JS to display the items using refactored components. The properties and sorting functions are passed through compnents through JSX.
 
 ## Installation
-None! 
+None! Just go to https://umutamac.github.io/employee-directory/
 ## Usage
 Click the 4 buttons below the title to sort the table.
 ### License

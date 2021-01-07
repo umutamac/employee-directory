@@ -1,11 +1,13 @@
 # Employee Directory
 ## Description
-This app lets users sort the table data in ascending order by ID number, name, age or salary. The data comes from a json file in the src folder, and users have no option to add/remove any data.
+This app lets users sort the table data in ascending order by ID number, name, age or salary. The sample data comes from a json file in the src folder, and users have no option to add/remove any data.
 
-This app uses React JS to display the items using refactored components. The sorting options do not cause a refresh of the page due to the being a one-page app based on React.
+This app uses React JS to display the items using refactored components. The sorting options do not cause a refresh of the page due to the being a one-page app based on React. This was a practice app to get familiar with using and understanding React JS.
+
+The styling on the page involves Bootstrap CSS to create a simple, quick front-end creation.
 
 ## Installation
-None! Just go to https://umutamac.github.io/employee-directory/
+None! Just go to deployed app at https://umutamac.github.io/employee-directory/
 
 ## Usage
 Once the page loads, click on an of the 4 buttons below the title to sort the table in different ways.

@@ -4,7 +4,7 @@ This app lets users sort the table data in ascending order by ID number, name, a
 
 This app uses React JS to display the items using refactored components. The sorting options do not cause a refresh of the page due to the being a one-page app based on React. This was a practice app to get familiar with using and understanding React JS.
 
-The styling on the page involves Bootstrap CSS to create a simple, quick front-end creation.
+The styling on the page involves Bootstrap CSS to quickly create a simple front-end.
 
 ## Installation
 None! Just go to deployed app at https://umutamac.github.io/employee-directory/
